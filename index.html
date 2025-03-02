@@ -54,18 +54,29 @@
             background: rgba(0, 0, 0, 0.3);
  
 	}
-	     /* Sidebar Ad Container */
-	    .sidebar-ad	{
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            text-align: center;
-            background: rgba(0, 0, 0, 0.2);
-            z-index: 9999;
-            padding: 10px 0;
-	    }
 
+
+	    /* Ad Container */
+        .ad-container {
+            width: 160px;
+            height: 600px;
+            margin: 20px auto; /* Centers under content */
+            text-align: center;
+            background-color: #f1f1f1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .ad-container {
+                width: 100%;
+                height: auto;
+                max-width: 160px;
+            }
 	   
 
 	 /* Anchor Ad Container */
@@ -185,11 +196,13 @@
         </div>
     </div>
 
-<!-- Anchor Ad -->
-    <div class="sidebar-ad" id="siebarAd">
-     
-        <div class="ad-wrapper">
-	<script type="text/javascript">
+
+
+<!-- Ad Section -->
+    <div class="ad-container">
+        <a href="https://example.com" target="_blank">
+
+			<script type="text/javascript">
 	atOptions = {
 		'key' : '0f5ce766b36075b7f4aa318c806ebafc',
 		'format' : 'iframe',
@@ -199,11 +212,10 @@
 	};
 </script>
 <script type="text/javascript" src="//sparrowaboveaveragedefence.com/0f5ce766b36075b7f4aa318c806ebafc/invoke.js"></script>
-
-		        </div>    
+		
+            <img src="https://your-username.github.io/repository/ad-image.jpg" alt="Advertisement" width="160" height="600">
+        </a>
     </div>
-
-
 
 </body>
 </html>
