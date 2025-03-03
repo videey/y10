@@ -74,12 +74,10 @@
 }
 
 .ad-top {
-    top: 100%;
     max-width: 728px;
     height: 90px;
     background-color: #f1f1f1; /* Placeholder color */
     margin-bottom: 20px;
-}
 
     .native-ad {
         padding: 10px;
@@ -112,21 +110,59 @@
     background-color: #f1f1f1; /* Placeholder color */
 }
       
-        video {
+.video-section {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
 
-	    position: relative;
-		width: 365px;
-		height: 725px;
-		right: 13px;
-		
-        }
+.ad-above-video {
+    max-width: 728px;
+    height: 90px;
+    background-color: #f1f1f1; /* Placeholder color */
+    margin: 0 auto 20px;
+}
+
+.video-container {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .ad-above-video {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
     </style>
 </head>
 <body>
 
 
 
-	
+	<div class="video-section">
+    <div class="ad-wrapper ad-above-video">
+           	<script type="text/javascript">
+	atOptions = {
+		'key' : '6e32abe9042e01542eb84db122874d2a',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//sparrowaboveaveragedefence.com/6e32abe9042e01542eb84db122874d2a/invoke.js"></script>
+    </div>
     <div class="video-container">
 
 	   <video id="myVideo" controls autoplay>
@@ -157,16 +193,7 @@
 
 
 <div class="ad-wrapper ad-top">
-    	<script type="text/javascript">
-	atOptions = {
-		'key' : '6e32abe9042e01542eb84db122874d2a',
-		'format' : 'iframe',
-		'height' : 90,
-		'width' : 728,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//sparrowaboveaveragedefence.com/6e32abe9042e01542eb84db122874d2a/invoke.js"></script>
+
 </div>
 	    
 	
