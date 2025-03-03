@@ -56,24 +56,17 @@
 	}
 
 
-	    /* Ad Container */
-        .below-container {
+		/* Sidebar Ad Container */
+        .ad-container {
             width: 160px;
             height: 600px;
             margin: 20px auto; /* Centers under content */
             text-align: center;
-            background-color: #f1f1f1;
             display: flex;
             align-items: center;
             justify-content: center;
             border: 1px solid #ddd;
             border-radius: 5px;
-        }
-	       .below-wrapper {
-            display: inline-block;
-            max-width: 728px; /* Default desktop size */
-            width: 160%;
-		height: 600px;
         }
 
 	   
@@ -115,6 +108,18 @@
             border-radius: 5px;
             font-size: 14px;
         }
+
+	            /* Responsive Ad */
+        @media (max-width: 768px) {
+            .anchor-ad {
+                height: 60px;
+            }
+            .ad-container {
+                width: 100%;
+                height: auto;
+                max-width: 160px;
+            }
+        
 
       
         video {
@@ -178,7 +183,9 @@
     </script>	
 
 
-	    <!-- Ad Section -->
+	    <!-- Sidebar Ad Section (160x600px) -->
+    <div class="ad-container">
+       
 
 
 <script type="text/javascript">
@@ -192,7 +199,7 @@
 </script>
 <script type="text/javascript" src="//sparrowaboveaveragedefence.com/306902edebf3c3c30213ae1012451268/invoke.js"></script>
 		
-        
+       </div> 
 
 
 
